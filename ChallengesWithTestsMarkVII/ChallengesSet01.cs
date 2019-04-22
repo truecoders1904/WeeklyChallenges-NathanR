@@ -20,7 +20,7 @@ namespace ChallengesWithTestsMarkVII
 
         public double Subtract(double minuend, double subtrahend)
         {
-            return (minuend - subtrahend);
+            return minuend - subtrahend;
         }
 
         public int Add(int number1, int number2)
@@ -30,14 +30,7 @@ namespace ChallengesWithTestsMarkVII
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            if (number1 < number2)
-            {
-                return number1;
-            }
-            else
-            {
-                return number2;
-            }
+            return Math.Min(number1, number2);
         }
 
         public long Multiply(long factor1, long factor2)
@@ -47,12 +40,17 @@ namespace ChallengesWithTestsMarkVII
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            if (nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+
+            return $"Hello, {nameOfPerson}!";
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return "HEY!";
         }
     }
 }
