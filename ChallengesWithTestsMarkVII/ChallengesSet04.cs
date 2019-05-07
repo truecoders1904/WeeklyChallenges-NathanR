@@ -44,10 +44,8 @@ namespace ChallengesWithTestsMarkVII
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
+
         }
 
         public bool IsStringANumber(string input)
