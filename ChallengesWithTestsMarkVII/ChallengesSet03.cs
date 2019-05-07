@@ -6,23 +6,9 @@ namespace ChallengesWithTestsMarkVII
 {
     public class ChallengesSet03
     {
-        public bool ArrayContainsAFalse(bool[] vals)
-        { 
-            if (vals.Length == 0)
-            {
-                return false;
-            }
-
-            bool item = false;
-
-            if (item != false || item == false)
-            {
-                return item;
-            }
-
-
-
-
+        public bool ArrayContainsAFalse(bool vals)
+        {
+            throw new NotImplementedException();
 
         }
 
