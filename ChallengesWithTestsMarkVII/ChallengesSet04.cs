@@ -9,9 +9,16 @@ namespace ChallengesWithTestsMarkVII
         public int AddEvenSubtractOdd(int[] numbers)
         {
             int total = 0;
-            foreach(int num in numbers)
+            foreach (int num in numbers)
             {
-                total = total + num % 2;
+                if (num % 2 == 0)
+                {
+                    total = total + num;
+                }
+                else
+                {
+                    total = total - num;
+                }
             }
             return total;
         }

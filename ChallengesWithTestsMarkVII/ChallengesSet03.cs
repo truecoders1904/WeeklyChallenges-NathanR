@@ -6,10 +6,9 @@ namespace ChallengesWithTestsMarkVII
 {
     public class ChallengesSet03
     {
-        public bool ArrayContainsAFalse(bool vals)
+        public bool ArrayContainsAFalse(bool[] vals)
         {
             throw new NotImplementedException();
-
         }
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
