@@ -13,14 +13,14 @@ namespace ChallengesWithTestsMarkVII
                 return false;
             }
 
-            bool item = true || false;
+            bool item = false;
 
             if (item != false || item == false)
             {
                 return item;
             }
 
-            return item;
+
 
 
 
