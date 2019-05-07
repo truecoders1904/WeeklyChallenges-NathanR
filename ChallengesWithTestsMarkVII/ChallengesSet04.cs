@@ -49,8 +49,8 @@ namespace ChallengesWithTestsMarkVII
         }
 
         public bool IsStringANumber(string input)
-        {
-            throw new NotImplementedException();
+        { 
+            return double.TryParse(input, out double i);
         }
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
