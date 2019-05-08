@@ -25,7 +25,14 @@ namespace ChallengesWithTestsMarkVII
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-            throw new NotImplementedException();
+            List<int> strList = new List<int>();
+            strList.Add(str1.Length);
+            strList.Add(str2.Length);
+            strList.Add(str3.Length);
+            strList.Add(str4.Length);
+
+            return strList.Min();
+
         }
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
