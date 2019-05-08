@@ -37,7 +37,13 @@ namespace ChallengesWithTestsMarkVII
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
         {
-            throw new NotImplementedException();
+            List<int> newList = new List<int>();
+            newList.Add(number1);
+            newList.Add(number2);
+            newList.Add(number3);
+            newList.Add(number4);
+
+            return newList.Min();
         }
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
@@ -62,12 +68,16 @@ namespace ChallengesWithTestsMarkVII
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-            throw new NotImplementedException();
+            if (objs == null)
+            {
+                return true;
+            }
+            return false;
         }
 
         public double AverageEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+           
         }
 
         public int Factorial(int number)
