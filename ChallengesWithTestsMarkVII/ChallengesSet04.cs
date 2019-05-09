@@ -48,7 +48,7 @@ namespace ChallengesWithTestsMarkVII
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            
+            biz.Name = "TrueCoders";
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
@@ -106,7 +106,12 @@ namespace ChallengesWithTestsMarkVII
 
         public int Factorial(int number)
         {
-            throw new NotImplementedException();
+            int result = 1;
+            for (int i = 1; i <= number; i++)
+            {
+               result *= i;
+            }
+            return result;
         }
     }
 }
