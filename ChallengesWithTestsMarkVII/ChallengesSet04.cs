@@ -48,7 +48,7 @@ namespace ChallengesWithTestsMarkVII
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            throw new NotImplementedException();
+            
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
@@ -77,7 +77,31 @@ namespace ChallengesWithTestsMarkVII
 
         public double AverageEvens(int[] numbers)
         {
-           
+            if (numbers == null)
+            {
+                return 0;
+            }
+
+            List<int> onlyEvens = new List<int>();
+
+            foreach (int evens in numbers)
+            {
+                if (evens % 2 == 0)
+                {
+                    onlyEvens.Add(evens);
+                }
+            }
+            if (onlyEvens.Count ==0)
+            {
+                return 0;
+            }
+            int total = 0;
+            foreach (int num in onlyEvens)
+            {
+                total = total + num;
+            }
+            double newAverage = (double)total / onlyEvens.Count;
+            return newAverage;
         }
 
         public int Factorial(int number)
