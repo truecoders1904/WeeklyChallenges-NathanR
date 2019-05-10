@@ -68,11 +68,29 @@ namespace ChallengesWithTestsMarkVII
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-            if (objs == null)
+            List<object> countOfObjects = new List<object>();
+            List<object> countOfNulls = new List<object>();
+
+            foreach (object obj in objs)
+            {
+                if (obj != null)
+                {
+                    countOfObjects.Add(obj);
+                }
+
+                if (obj == null)
+                {
+                    countOfNulls.Add(obj);
+                }
+            }
+
+            if (countOfNulls.Count > countOfObjects.Count)
             {
                 return true;
             }
             return false;
+     
+
         }
 
         public double AverageEvens(int[] numbers)
@@ -106,12 +124,19 @@ namespace ChallengesWithTestsMarkVII
 
         public int Factorial(int number)
         {
+            if (number < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
             int result = 1;
             for (int i = 1; i <= number; i++)
             {
                result *= i;
             }
+
+
             return result;
+
         }
     }
 }
